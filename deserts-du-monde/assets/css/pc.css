@@ -1,11 +1,30 @@
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media (min-device-width: 1280px) and (max-device-width: 1920px)  { 
+
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        
+    }
+
+    .logo {
+        width: 20%;
+        margin: 2% 5%;
+    }
+    .main-title {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2vw;
+        margin: 2% -8%;
+    }
+
+    
 
     .nav-bar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
     }
 
@@ -16,9 +35,20 @@
 
     .nav-bar .menu {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         align-self: center;
         max-height: 100%;
+        margin: 10%;
     }
+    .nav-bar li a {
+        display: block;
+        padding: 1.2rem 1.2rem;
+        text-decoration: none;
+        background-color: #FFFFFF;
+        color: #000000;
+        text-align: center;
+        font-size: 1.7rem;;
+    
+    }   
 }
