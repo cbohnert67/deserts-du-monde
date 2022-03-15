@@ -1,0 +1,96 @@
+.nav-bar {
+    background-color: #FFFFFF;
+    
+}
+
+.nav-bar ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.nav-bar li a {
+    display: block;
+    padding: 1.25rem 1.25rem;
+    text-decoration: none;
+    background-color: #E2E2E2;
+    color: #808080;
+    text-align: center;
+    border: 1px solid #fff;    
+
+}
+
+  /* menu */
+.nav-bar .menu {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    width: 60%;
+    margin: auto;
+}
+
+  /* menu icone */
+.nav-bar .menu-icone {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.75rem 1.25rem;
+    position: relative;
+    user-select: none;
+    
+}
+
+.nav-bar .menu-icone .nav-icone {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 1.375rem;
+    float: right;
+}
+
+.nav-bar .menu-icone .nav-icone:before,
+.nav-bar .menu-icone .nav-icone:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.nav-bar .menu-icone .nav-icone:before {
+    top: 5px;
+}
+
+.nav-bar .menu-icone .nav-icone:after {
+    top: -5px;
+}
+
+  /* menu bouton */
+
+.nav-bar .menu-bouton {
+    display: none;
+    
+}
+
+.nav-bar .menu-bouton:checked ~ .menu {
+    max-height: 15rem; /* définit la taille du conteneur des liens*/
+}
+
+.nav-bar .menu-bouton:checked ~ .menu-icone .nav-icone {
+    background: transparent;/* Fait disparaître le span initial*/
+}
+
+.nav-bar .menu-bouton:checked ~ .menu-icone .nav-icone:before {
+    transform: rotate(-45deg); /*fait pivoter le span before de 45degrès ver la gauche*/
+}
+
+.nav-bar .menu-bouton:checked ~ .menu-icone .nav-icone:after {
+    transform: rotate(45deg);/*fait pivoter le span before de 45degrès ver la droite*/
+}
+
+.nav-bar .menu-bouton:checked ~ .menu-icone .nav-icone:before,
+.nav-bar .menu-bouton:checked ~ .menu-icone .nav-icone:after {
+    top: 0;
+}
