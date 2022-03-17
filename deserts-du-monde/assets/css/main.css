@@ -36,8 +36,23 @@ footer {
     margin: 2% 0;
 }
 
+.flex-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
 .main-title {
     align-self: center;
+    font-family: mali;
     font-style: italic;
     font-weight: bold;
     color: brown;
